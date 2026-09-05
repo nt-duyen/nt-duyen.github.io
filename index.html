@@ -39,6 +39,20 @@
         display: block;
       }
 
+      .news-gallery img.photo-full {
+        aspect-ratio: auto;
+        object-fit: contain;
+      }
+      
+      .news-gallery.one-photo:has(.photo-wide) {
+        max-width: 620px;
+      }
+      
+      .news-gallery img.photo-wide {
+        aspect-ratio: auto;
+        object-fit: contain;
+      }
+      
       .divider {
         display: flex;
         justify-content: center;
