@@ -20,11 +20,19 @@
         display: grid;
         gap: 24px;
         margin: 18px auto 34px;
-        max-width: 600px;
+        max-width: 720px;
       }
 
       .news-gallery.one-photo {
-        max-width: 280px;
+        max-width: 360px;
+      }
+
+      .news-gallery.atbc-photo {
+        max-width: 860px;
+      }
+
+      .news-gallery.forestgeo-photo {
+        max-width: 700px;
       }
 
       .news-gallery.two-photos {
@@ -37,6 +45,28 @@
         object-fit: cover;
         border-radius: 4px;
         display: block;
+      }
+
+      .news-gallery img.photo-full,
+      .news-gallery.atbc-photo img,
+      .news-gallery.forestgeo-photo img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+      }
+
+      .news-gallery.one-photo:has(.photo-wide) {
+        max-width: 700px;
+      }
+
+      .news-gallery img.photo-wide {
+        aspect-ratio: auto;
+        object-fit: contain;
+      }
+
+      .news-gallery img.photo-lower {
+        object-position: center 80%;
       }
 
       .divider {
@@ -118,6 +148,7 @@
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#courses">Courses</a>
+        <a href="#grants">Grants</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -167,13 +198,10 @@
 
         <div class="timeline">
           <article class="news-block">
-            <time datetime="2026">September 2026</time>
+            <time datetime="2026-09">September 2026</time>
             <ul>
               <li>Began PhD studies at UCAS, supported by the CAS-ANSO Scholarship.</li>
             </ul>
-            <div class="news-gallery one-photo">
-              <img src="assets/research-landscape.png" alt="Forest research landscape" />
-            </div>
           </article>
 
           <article class="news-block">
@@ -181,8 +209,8 @@
             <ul>
               <li>Volunteered at <a href="https://www.atbc2026.org/">The 62nd Annual Meeting of the Association for Tropical Biology and Conservation (ATBC 2026)</a>.</li>
             </ul>
-            <div class="news-gallery one-photo">
-              <img src="assets/atbc_volunteer_group.JPG" alt="ATBC 2026 volunteer activity" />
+            <div class="news-gallery atbc-photo">
+              <img class="photo-full" src="assets/atbc_volunteer_group.JPG" alt="ATBC 2026 volunteer activity" />
             </div>
           </article>
 
@@ -191,9 +219,8 @@
             <ul>
               <li>Participated in the <a href="https://forestgeo.si.edu/">ForestGEO Analytical Workshop</a>.</li>
             </ul>
-            <div class="news-gallery two-photos">
-              <img src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
-              <img src="assets/forest_geo_field.jpg" alt="ForestGEO field activity" />
+            <div class="news-gallery forestgeo-photo">
+              <img class="photo-full" src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
             </div>
           </article>
 
@@ -214,7 +241,7 @@
               <li>Participated in <a href="https://mp.weixin.qq.com/s/4hihHhv6JFnZZ4QVlXUnKQ">The 8th Advanced Statistics Workshop at XTBG</a>.</li>
             </ul>
             <div class="news-gallery one-photo">
-              <img src="assets/8th_stat_course.JPG" alt="The 8th Advanced Statistics Workshop at XTBG" />
+              <img class="photo-wide" src="assets/8th_stat_course.JPG" alt="The 8th Advanced Statistics Workshop at XTBG" />
             </div>
           </article>
 
@@ -231,8 +258,8 @@
       </section>
 
       <section class="section-band research" id="research">
-        <div class="buchi-divider">
-          <div class="buchi-circle">
+        <div class="divider">
+          <div class="circle">
             <svg class="leaf-icon" viewBox="0 0 120 120" aria-hidden="true">
               <path d="M55 96 C56 75, 57 54, 60 24" />
               <path d="M60 27 C73 28, 82 38, 80 52 C67 52, 58 43, 60 27" />
@@ -353,8 +380,9 @@
                 <td>10th XTBG Youth Science Festival, China (31 January-2 February)</td>
                 <td>Poster Presentation: Forest Carbon and Math</td>
               </tr>
+
+              <tr><th colspan="2">2025</th></tr>
               <tr>
-                <tr><th colspan="2">2025</th></tr>
                 <td>Pedagogical Training Program for University and College Lecturers, National Academy of Education Management, Vietnam (28 September-26 November)</td>
                 <td>Participant</td>
               </tr>
@@ -376,6 +404,7 @@
                 <td>The 8th International Canopy Conference, China (15-19 October)</td>
                 <td>Volunteer</td>
               </tr>
+
               <tr><th colspan="2">2015</th></tr>
               <tr>
                 <td>Joint Course: Plant Resistance to Pathogens and Plant Metabolism Pathways, Vietnam National University of Agriculture, Vietnam, and University of Tsukuba, Japan (23 March-14 June)</td>
