@@ -16,9 +16,36 @@
         font-weight: 700;
       }
 
+      .news-gallery {
+        display: grid;
+        gap: 24px;
+        margin: 18px auto 34px;
+        max-width: 960px;
+      }
+
+      .news-gallery.one-photo {
+        max-width: 520px;
+      }
+
+      .news-gallery.two-photos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .news-gallery img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 4px;
+        display: block;
+      }
+
       @media (max-width: 700px) {
         .intro h1 {
           font-size: 34px;
+        }
+
+        .news-gallery.two-photos {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -95,31 +122,40 @@
             <ul>
               <li>Began PhD studies at UCAS, supported by the CAS-ANSO Scholarship.</li>
             </ul>
-            <img class="news-thumb" src="assets/research-landscape.png" alt="Forest research landscape" />
+            <div class="news-gallery one-photo">
+              <img src="assets/research-landscape.png" alt="Forest research landscape" />
+            </div>
           </article>
 
           <article class="news-block">
             <time datetime="2026-07">July 2026</time>
             <ul>
-              <li><a href="https://www.atbc2026.org/">Volunteered at ATBC 2026.</a></li>
+              <li>Volunteered at <a href="https://www.atbc2026.org/">ATBC 2026</a>.</li>
             </ul>
-            <img class="news-thumb" src="assets/atbc_volunteer.JPG" alt="ATBC 2026 volunteer activity" />
+            <div class="news-gallery one-photo">
+              <img src="assets/atbc_volunteer.JPG" alt="ATBC 2026 volunteer activity" />
+            </div>
           </article>
 
           <article class="news-block">
             <time datetime="2026-06">June 2026</time>
             <ul>
-              <li><a href="https://forestgeo.si.edu/">Participated in the ForestGEO Analytical Workshop.</a></li>
+              <li>Participated in the <a href="https://forestgeo.si.edu/">ForestGEO Analytical Workshop</a>.</li>
             </ul>
-            <img class="news-thumb" src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
+            <div class="news-gallery two-photos">
+              <img src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
+              <img src="assets/forest_geo_field.jpg" alt="ForestGEO field activity" />
+            </div>
           </article>
 
           <article class="news-block">
             <time datetime="2025-06">June 2025</time>
             <ul>
-              <li><a href="https://mp.weixin.qq.com/s/4hihHhv6JFnZZ4QVlXUnKQ">Participated in The 8th Advanced Statistics Workshop at XTBG.</a></li>
+              <li>Participated in <a href="https://mp.weixin.qq.com/s/4hihHhv6JFnZZ4QVlXUnKQ">The 8th Advanced Statistics Workshop at XTBG</a>.</li>
             </ul>
-            <img class="news-thumb" src="assets/8th_stat_course.JPG" alt="The 8th Advanced Statistics Workshop at XTBG" />
+            <div class="news-gallery one-photo">
+              <img src="assets/8th_stat_course.JPG" alt="The 8th Advanced Statistics Workshop at XTBG" />
+            </div>
           </article>
         </div>
       </section>
@@ -313,7 +349,7 @@
           </article>
           <article>
             <span>2025</span>
-            <p>XTBG Research Grant for Publication in a High-Impact Journal.</p>
+            <p>XTBG Research Grant for Publication in High Impact Journal.</p>
           </article>
           <article>
             <span>2025</span>
