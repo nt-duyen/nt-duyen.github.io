@@ -16,6 +16,20 @@
         font-weight: 700;
       }
 
+      .hero-role,
+      .hero-text,
+      .hero-role a,
+      .hero-text a {
+        font-weight: 400;
+      }
+
+      .hero-role a,
+      .hero-text a,
+      .news-block a,
+      .publication-entry a {
+        color: #45a06c;
+      }
+
       .news-gallery {
         display: grid;
         gap: 24px;
@@ -97,7 +111,7 @@
       .leaf-icon path {
         fill: #313437;
         stroke: #313437;
-        stroke-width: 7;
+        stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -108,6 +122,87 @@
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
+      }
+
+      .publication-year {
+        color: #2c3034;
+        font-size: 40px;
+        font-weight: 300;
+        margin: 0 auto 46px;
+        text-align: center;
+      }
+
+      .publication-entry {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      .publication-entry h3 {
+        color: #2c3034;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.35;
+        margin-bottom: 10px;
+      }
+
+      .publication-entry p {
+        color: #2c3034;
+        font-size: 22px;
+        line-height: 1.45;
+        margin: 0 0 8px;
+      }
+
+      .publication-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 14px;
+      }
+
+      .publication-links a {
+        align-items: center;
+        border: 1px solid #cfd8d2;
+        border-radius: 18px;
+        display: inline-flex;
+        font-size: 18px;
+        line-height: 1;
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+
+      .publication-links a:hover {
+        border-color: #45a06c;
+        text-decoration: none;
+      }
+
+      .pub-link-icon {
+        width: 19px;
+        height: 19px;
+        fill: currentColor;
+        margin-right: 6px;
+      }
+
+      .contact-icons {
+        align-items: center;
+        display: flex;
+        gap: 18px;
+      }
+
+      .contact-icons a {
+        border: 0;
+        color: #2c3034;
+        padding: 0;
+      }
+
+      .contact-icons svg {
+        width: 34px;
+        height: 34px;
+        fill: currentColor;
+      }
+
+      .contact-icons a:hover {
+        color: #45a06c;
+        text-decoration: none;
       }
 
       @media (max-width: 700px) {
@@ -127,6 +222,31 @@
         .leaf-icon {
           width: 92px;
           height: 92px;
+        }
+
+        .tree-icon {
+          width: 86px;
+          height: 86px;
+        }
+
+        .tree-icon {
+          width: 92px;
+          height: 92px;
+          margin-bottom: 12px;
+          fill: #313437;
+        }
+
+        .publication-year {
+          font-size: 32px;
+        }
+
+        .publication-entry h3 {
+          font-size: 19px;
+        }
+
+        .publication-entry p,
+        .publication-links a {
+          font-size: 16px;
         }
       }
     </style>
@@ -158,10 +278,7 @@
         <div class="intro-inner">
           <h1>Thi Duyen Nguyen</h1>
           <p class="hero-role">
-            I am a PhD Candidate at the University of Chinese Academy of Sciences (UCAS), based at Xishuangbanna Tropical Botanical Garden (XTBG), Chinese Academy of Sciences (CAS).
-          </p>
-          <p class="hero-text">
-            I study tree architectural diversity and forest structure at any scale. My current research examines how trees grow, compete, and adjust their architecture under different ecological conditions using large forest datasets and Bayesian statistical models.
+            I am a PhD Candidate in Ecology at the <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a> (UCAS), based at <a href="http://english.xtbg.cas.cn/">Xishuangbanna Tropical Botanical Garden</a> (XTBG), <a href="https://english.cas.cn/">Chinese Academy of Sciences</a> (CAS). I study the drivers of tree architecture and forest structure at any scale. My current research examines how trees grow, compete, and adjust their architecture under different ecological conditions using large forest datasets and Bayesian statistical models.
           </p>
 
           <div class="social-links" aria-label="Profile links">
@@ -260,12 +377,16 @@
       <section class="section-band research" id="research">
         <div class="divider">
           <div class="circle">
-            <svg class="leaf-icon" viewBox="0 0 120 120" aria-hidden="true">
-              <path d="M55 96 C56 75, 57 54, 60 24" />
-              <path d="M60 27 C73 28, 82 38, 80 52 C67 52, 58 43, 60 27" />
-              <path d="M57 47 C42 45, 31 51, 27 64 C42 69, 54 61, 57 47" />
-              <path d="M58 58 C74 56, 86 63, 91 76 C75 82, 63 73, 58 58" />
-              <path d="M55 72 C38 70, 25 77, 20 91 C37 97, 50 88, 55 72" />
+            <svg class="tree-icon" viewBox="0 0 140 140" aria-hidden="true">
+              <path d="M54 116c0-30 7-53 21-70 7-9 16-15 28-20-15 16-23 31-27 46-4 15-4 29-4 44H54z" />
+              <path d="M63 76c-17-2-29-10-35-24 18-3 31 3 40 18l-5 6z" />
+              <path d="M76 54c-12-12-14-27-5-44 14 11 17 26 9 42l-4 2z" />
+              <path d="M88 69c8-16 22-23 42-20-7 18-22 26-42 20z" />
+              <path d="M55 56c-14-7-20-18-17-33 16 5 24 16 22 31l-5 2z" />
+              <path d="M96 35c-3-14 2-25 15-33 8 15 5 27-10 36l-5-3z" />
+              <path d="M106 81c15-4 27 0 36 11-12 12-25 13-39 3l3-14z" />
+              <path d="M78 88c12 3 20 11 23 24-15 2-26-4-33-17l10-7z" />
+              <path d="M33 71c-12 3-22 0-31-8 10-11 21-14 34-7l-3 15z" />
             </svg>
             <h2>Research</h2>
           </div>
@@ -294,19 +415,24 @@
         <div class="section-heading">
           <h2>Publications</h2>
         </div>
-        <div class="paper-list">
-          <article class="paper-item">
-            <span class="paper-year">2025</span>
-            <div>
-              <h3>
-                <a href="https://link.springer.com/article/10.1007/s11676-025-01898-9">
-                  Saturating allometric relationships reveal how wood density shapes global tree architecture
-                </a>
-              </h3>
-              <p>Thi Duyen Nguyen and Masatoshi Katabuchi. Journal of Forestry Research, 36, 107.</p>
-            </div>
-          </article>
-        </div>
+
+        <div class="publication-year">-2025-</div>
+
+        <article class="publication-entry">
+          <h3>Saturating Allometric Relationships Reveal How Wood Density Shapes Global Tree Architecture</h3>
+          <p><strong>Nguyen TD</strong>, and Katabuchi M,</p>
+          <p><em>Journal of Forestry Research</em> 2025</p>
+
+          <div class="publication-links">
+            <a href="https://link.springer.com/10.1007/s11676-025-01898-9">doi 10.1007/S11676-025-01898-9</a>
+            <a href="https://github.com/nt-duyen/tree-allo">
+              <svg class="pub-link-icon" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 3.7C16 3.7 3 16.7 3 32.8c0 12.8 8.3 23.7 19.8 27.5 1.5.3 2-.6 2-1.4v-5.2c-8.1 1.8-9.8-3.5-9.8-3.5-1.3-3.4-3.2-4.3-3.2-4.3-2.7-1.8.2-1.8.2-1.8 2.9.2 4.5 3 4.5 3 2.6 4.5 6.9 3.2 8.5 2.5.3-1.9 1-3.2 1.8-3.9-6.4-.7-13.2-3.2-13.2-14.4 0-3.2 1.1-5.8 3-7.8-.3-.7-1.3-3.7.3-7.7 0 0 2.5-.8 8 3a27.5 27.5 0 0 1 14.6 0c5.6-3.8 8-3 8-3 1.6 4 .6 7 .3 7.7 1.9 2.1 3 4.6 3 7.8 0 11.2-6.8 13.7-13.3 14.4 1.1.9 2 2.7 2 5.5v8.2c0 .8.5 1.7 2 1.4C52.7 56.5 61 45.6 61 32.8 61 16.7 48 3.7 32 3.7z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
       </section>
 
       <section class="section-band experience" id="education">
@@ -317,12 +443,12 @@
           <article class="experience-item">
             <span>2026 - Present</span>
             <div>
-              <h3>PhD Candidate</h3>
+              <h3>PhD in Ecology</h3>
               <p>University of Chinese Academy of Sciences and Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences, China.</p>
             </div>
           </article>
           <article class="experience-item">
-            <span>2023 - 2025</span>
+            <span>2022 - 2025</span>
             <div>
               <h3>MSc Ecology</h3>
               <p>University of Chinese Academy of Sciences and Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences, China. Thesis: A study of allometric scaling models: Integrating interspecific constraints to explain variation in tree architecture.</p>
@@ -445,12 +571,24 @@
             <h2>Let us connect</h2>
             <p>Open to collaboration, research conversations, and questions about my work.</p>
           </div>
-          <div class="contact-links">
-            <a href="mailto:ntduyenbio.edu.vn@gmail.com">Email</a>
-            <a href="https://github.com/nt-duyen">GitHub</a>
-            <a href="https://x.com/duyeneco?s=11">X</a>
-            <a href="https://scholar.google.com/">Google Scholar</a>
-            <a href="assets/cv.pdf">CV</a>
+
+          <div class="contact-links contact-icons" aria-label="Contact links">
+            <a href="mailto:ntduyenbio.edu.vn@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M8 13h48a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V17a4 4 0 0 1 4-4zm4.1 6 19.8 15.9L52 19H12.1zm41.9 5.2L34.4 39.7a4 4 0 0 1-4.9 0L10 24.2V45h44V24.2z" />
+              </svg>
+            </a>
+            <a href="https://github.com/nt-duyen" aria-label="GitHub">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 3.7C16 3.7 3 16.7 3 32.8c0 12.8 8.3 23.7 19.8 27.5 1.5.3 2-.6 2-1.4v-5.2c-8.1 1.8-9.8-3.5-9.8-3.5-1.3-3.4-3.2-4.3-3.2-4.3-2.7-1.8.2-1.8.2-1.8 2.9.2 4.5 3 4.5 3 2.6 4.5 6.9 3.2 8.5 2.5.3-1.9 1-3.2 1.8-3.9-6.4-.7-13.2-3.2-13.2-14.4 0-3.2 1.1-5.8 3-7.8-.3-.7-1.3-3.7.3-7.7 0 0 2.5-.8 8 3a27.5 27.5 0 0 1 14.6 0c5.6-3.8 8-3 8-3 1.6 4 .6 7 .3 7.7 1.9 2.1 3 4.6 3 7.8 0 11.2-6.8 13.7-13.3 14.4 1.1.9 2 2.7 2 5.5v8.2c0 .8.5 1.7 2 1.4C52.7 56.5 61 45.6 61 32.8 61 16.7 48 3.7 32 3.7z" />
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/" aria-label="Google Scholar">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 5 4 27l28 22 28-22L32 5zm0 10.2L46.6 27 32 38.8 17.4 27 32 15.2z" />
+                <path d="M18 40.5c0 6.6 6.3 12 14 12s14-5.4 14-12v-5.2L32 46.1 18 35.3v5.2z" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
