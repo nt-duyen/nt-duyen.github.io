@@ -39,6 +39,50 @@
         display: block;
       }
 
+      .research-circle-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 34px;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+
+      .research-circle-card {
+        text-align: center;
+      }
+
+      .research-circle-icon {
+        width: 190px;
+        height: 190px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        background: #fff;
+        display: grid;
+        place-items: center;
+        font-size: 78px;
+        box-shadow: 0 16px 40px rgba(32, 38, 44, 0.08);
+        border: 1px solid rgba(32, 38, 44, 0.06);
+      }
+
+      .research-circle-card h3 {
+        margin: 0 0 10px;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .research-circle-card p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.65;
+      }
+
+      @media (max-width: 800px) {
+        .research-circle-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       @media (max-width: 700px) {
         .intro h1 {
           font-size: 34px;
@@ -65,8 +109,10 @@
         <a href="#research">Research</a>
         <a href="#publications">Publication</a>
         <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Professional experience</a>
         <a href="#courses">Courses</a>
+        <a href="#grants">Grants</a>
+        <a href="#outside">Outside</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -138,11 +184,11 @@
           <article class="news-block">
             <time datetime="2026-06">June 2026</time>
             <ul>
-              <li>Participated in the <a href="https://forestgeo.si.edu/training-and-fellowships/2026-analytical-workshop">ForestGEO Analytical Workshop</a>.</li>
+              <li>Participated in the <a href="https://forestgeo.si.edu/">ForestGEO Analytical Workshop</a>.</li>
             </ul>
             <div class="news-gallery two-photos">
               <img src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
-              <img src="assets/forest_KC.jpg" alt="ForestGEO field activity" />
+              <img src="assets/forest_geo_field.jpg" alt="ForestGEO field activity" />
             </div>
           </article>
 
@@ -172,19 +218,22 @@
         <div class="section-heading">
           <h2>Research</h2>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="card-number">01</span>
+
+        <div class="research-circle-grid">
+          <article class="research-circle-card">
+            <div class="research-circle-icon">🌳</div>
             <h3>Tropical Forest Ecology</h3>
             <p>Exploring how ecological processes shape forest structure, tree diversity, and community patterns across scales.</p>
           </article>
-          <article class="feature-card">
-            <span class="card-number">02</span>
+
+          <article class="research-circle-card">
+            <div class="research-circle-icon">🌳</div>
             <h3>Tree Allometry</h3>
             <p>Studying how trees grow, compete, and adjust their architecture under different ecological conditions.</p>
           </article>
-          <article class="feature-card">
-            <span class="card-number">03</span>
+
+          <article class="research-circle-card">
+            <div class="research-circle-icon">🌳</div>
             <h3>Bayesian Modelling</h3>
             <p>Using large forest datasets and Bayesian statistical models to connect data, uncertainty, and ecological theory.</p>
           </article>
