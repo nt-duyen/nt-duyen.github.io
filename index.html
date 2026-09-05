@@ -39,42 +39,45 @@
         display: block;
       }
 
-      .subtlecircle-section {
-        text-align: center;
-        margin: 0 auto 34px;
+      .buchi-divider {
+        display: flex;
+        justify-content: center;
+        margin: -20px auto 42px;
       }
 
-      .subtlecircle-icon {
-        width: 210px;
-        height: 210px;
-        margin: 0 auto 14px;
+      .buchi-circle {
+        width: 260px;
+        height: 260px;
         border-radius: 50%;
         background: #fff;
-        display: grid;
-        place-items: center;
-        font-size: 82px;
-        box-shadow: 0 18px 42px rgba(32, 38, 44, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 18px 45px rgba(32, 38, 44, 0.08);
         border: 1px solid rgba(32, 38, 44, 0.06);
       }
 
-      .subtlecircle-section h2 {
+      .leaf-icon {
+        width: 118px;
+        height: 118px;
+        margin-bottom: 8px;
+      }
+
+      .leaf-icon path {
+        fill: #313437;
+        stroke: #313437;
+        stroke-width: 7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .buchi-circle h2 {
         margin: 0;
+        color: #313437;
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
-        color: #313437;
-      }
-
-      .research-text-block {
-        max-width: 760px;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .research-text-block p {
-        margin: 0 0 16px;
-        font-size: 17px;
-        line-height: 1.75;
       }
 
       @media (max-width: 700px) {
@@ -86,10 +89,14 @@
           grid-template-columns: 1fr;
         }
 
-        .subtlecircle-icon {
-          width: 180px;
-          height: 180px;
-          font-size: 70px;
+        .buchi-circle {
+          width: 210px;
+          height: 210px;
+        }
+
+        .leaf-icon {
+          width: 92px;
+          height: 92px;
         }
       }
     </style>
@@ -106,7 +113,6 @@
 
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="#home">Home</a>
-        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#publications">Publication</a>
         <a href="#education">Education</a>
@@ -216,18 +222,35 @@
       </section>
 
       <section class="section-band research" id="research">
-        <div class="subtlecircle-section">
-          <div class="subtlecircle-icon">🌳</div>
-          <h2>Research</h2>
+        <div class="buchi-divider">
+          <div class="buchi-circle">
+            <svg class="leaf-icon" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M55 96 C56 75, 57 54, 60 24" />
+              <path d="M60 27 C73 28, 82 38, 80 52 C67 52, 58 43, 60 27" />
+              <path d="M57 47 C42 45, 31 51, 27 64 C42 69, 54 61, 57 47" />
+              <path d="M58 58 C74 56, 86 63, 91 76 C75 82, 63 73, 58 58" />
+              <path d="M55 72 C38 70, 25 77, 20 91 C37 97, 50 88, 55 72" />
+            </svg>
+            <h2>Research</h2>
+          </div>
         </div>
 
-        <div class="research-text-block">
-          <p>
-            My research explores how ecological processes shape forest structure, tree architectural diversity, and tropical forest communities across scales.
-          </p>
-          <p>
-            I am especially interested in tree allometry, competition, forest structure, and Bayesian statistical modelling using large forest datasets.
-          </p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-number">01</span>
+            <h3>Tropical Forest Ecology</h3>
+            <p>Exploring how ecological processes shape forest structure, tree diversity, and community patterns across scales.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">02</span>
+            <h3>Tree Allometry</h3>
+            <p>Studying how trees grow, compete, and adjust their architecture under different ecological conditions.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">03</span>
+            <h3>Bayesian Modelling</h3>
+            <p>Using large forest datasets and Bayesian statistical models to connect data, uncertainty, and ecological theory.</p>
+          </article>
         </div>
       </section>
 
