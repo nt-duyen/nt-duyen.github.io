@@ -39,47 +39,6 @@
         display: block;
       }
 
-      .buchi-divider {
-        display: flex;
-        justify-content: center;
-        margin: -20px auto 42px;
-      }
-
-      .buchi-circle {
-        width: 260px;
-        height: 260px;
-        border-radius: 50%;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 18px 45px rgba(32, 38, 44, 0.08);
-        border: 1px solid rgba(32, 38, 44, 0.06);
-      }
-
-      .leaf-icon {
-        width: 118px;
-        height: 118px;
-        margin-bottom: 8px;
-      }
-
-      .leaf-icon path {
-        fill: #313437;
-        stroke: #313437;
-        stroke-width: 7;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .buchi-circle h2 {
-        margin: 0;
-        color: #313437;
-        font-size: 18px;
-        font-weight: 800;
-        text-transform: uppercase;
-      }
-
       @media (max-width: 700px) {
         .intro h1 {
           font-size: 34px;
@@ -87,16 +46,6 @@
 
         .news-gallery.two-photos {
           grid-template-columns: 1fr;
-        }
-
-        .buchi-circle {
-          width: 210px;
-          height: 210px;
-        }
-
-        .leaf-icon {
-          width: 92px;
-          height: 92px;
         }
       }
     </style>
@@ -116,10 +65,8 @@
         <a href="#research">Research</a>
         <a href="#publications">Publication</a>
         <a href="#education">Education</a>
-        <a href="#experience">Professional experience</a>
+        <a href="#experience">Experience</a>
         <a href="#courses">Courses</a>
-        <a href="#grants">Grants</a>
-        <a href="#outside">Outside</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -191,11 +138,11 @@
           <article class="news-block">
             <time datetime="2026-06">June 2026</time>
             <ul>
-              <li>Participated in the <a href="https://forestgeo.si.edu/">ForestGEO Analytical Workshop</a>.</li>
+              <li>Participated in the <a href="https://forestgeo.si.edu/training-and-fellowships/2026-analytical-workshop">ForestGEO Analytical Workshop</a>.</li>
             </ul>
             <div class="news-gallery two-photos">
               <img src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
-              <img src="assets/forest_geo_field.jpg" alt="ForestGEO field activity" />
+              <img src="assets/forest_KC.jpg" alt="ForestGEO field activity" />
             </div>
           </article>
 
@@ -222,19 +169,9 @@
       </section>
 
       <section class="section-band research" id="research">
-        <div class="buchi-divider">
-          <div class="buchi-circle">
-            <svg class="leaf-icon" viewBox="0 0 120 120" aria-hidden="true">
-              <path d="M55 96 C56 75, 57 54, 60 24" />
-              <path d="M60 27 C73 28, 82 38, 80 52 C67 52, 58 43, 60 27" />
-              <path d="M57 47 C42 45, 31 51, 27 64 C42 69, 54 61, 57 47" />
-              <path d="M58 58 C74 56, 86 63, 91 76 C75 82, 63 73, 58 58" />
-              <path d="M55 72 C38 70, 25 77, 20 91 C37 97, 50 88, 55 72" />
-            </svg>
-            <h2>Research</h2>
-          </div>
+        <div class="section-heading">
+          <h2>Research</h2>
         </div>
-
         <div class="feature-grid">
           <article class="feature-card">
             <span class="card-number">01</span>
