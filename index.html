@@ -7,256 +7,15 @@
     <meta name="description" content="Personal academic homepage for Thi Duyen Nguyen, a PhD candidate studying tropical forest ecology, tree allometry, and Bayesian modelling." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-
-    <style>
-      .intro h1 {
-        font-size: 46px;
-        font-weight: 700;
-      }
-
-      .hero-role,
-      .hero-text,
-      .hero-role a,
-      .hero-text a {
-        font-weight: 400;
-      }
-
-      .hero-role a,
-      .hero-text a,
-      .news-block a,
-      .publication-entry a {
-        color: #45a06c;
-      }
-
-      .news-gallery {
-        display: grid;
-        gap: 24px;
-        margin: 18px auto 34px;
-        max-width: 720px;
-      }
-
-      .news-gallery.one-photo {
-        max-width: 360px;
-      }
-
-      .news-gallery.atbc-photo {
-        max-width: 860px;
-      }
-
-      .news-gallery.forestgeo-photo {
-        max-width: 600px;
-      }
-
-      .news-gallery.two-photos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .news-gallery img {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        border-radius: 4px;
-        display: block;
-      }
-
-      .news-gallery img.photo-full,
-      .news-gallery.atbc-photo img,
-      .news-gallery.forestgeo-photo img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: auto;
-        object-fit: contain;
-      }
-
-      .news-gallery.one-photo:has(.photo-wide) {
-        max-width: 560px;
-      }
-
-      .news-gallery img.photo-wide {
-        aspect-ratio: auto;
-        object-fit: contain;
-      }
-
-      .news-gallery img.photo-lower {
-        object-position: center 80%;
-      }
-
-      .divider {
-        display: flex;
-        justify-content: center;
-        margin: -20px auto 42px;
-      }
-
-      .circle {
-        width: 260px;
-        height: 260px;
-        border-radius: 50%;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 18px 45px rgba(32, 38, 44, 0.08);
-        border: 1px solid rgba(32, 38, 44, 0.06);
-      }
-
-      .leaf-icon {
-        width: 118px;
-        height: 118px;
-        margin-bottom: 8px;
-      }
-
-      .leaf-icon path {
-        fill: #313437;
-        stroke: #313437;
-        stroke-width: 6;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .circle h2 {
-        margin: 0;
-        color: #313437;
-        font-size: 18px;
-        font-weight: 800;
-        text-transform: uppercase;
-      }
-
-      .publication-year {
-        color: #2c3034;
-        font-size: 40px;
-        font-weight: 300;
-        margin: 0 auto 46px;
-        text-align: center;
-      }
-
-      .publication-entry {
-        max-width: 980px;
-        margin: 0 auto;
-      }
-
-      .publication-entry h3 {
-        color: #2c3034;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.35;
-        margin-bottom: 10px;
-      }
-
-      .publication-entry p {
-        color: #2c3034;
-        font-size: 22px;
-        line-height: 1.45;
-        margin: 0 0 8px;
-      }
-
-      .publication-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        margin-top: 14px;
-      }
-
-      .publication-links a {
-        align-items: center;
-        border: 1px solid #cfd8d2;
-        border-radius: 18px;
-        display: inline-flex;
-        font-size: 18px;
-        line-height: 1;
-        padding: 5px 10px;
-        text-decoration: none;
-      }
-
-      .publication-links a:hover {
-        border-color: #45a06c;
-        text-decoration: none;
-      }
-
-      .pub-link-icon {
-        width: 19px;
-        height: 19px;
-        fill: currentColor;
-        margin-right: 6px;
-      }
-
-      .contact-icons {
-        align-items: center;
-        display: flex;
-        gap: 18px;
-      }
-
-      .contact-icons a {
-        border: 0;
-        color: #2c3034;
-        padding: 0;
-      }
-
-      .contact-icons svg {
-        width: 34px;
-        height: 34px;
-        fill: currentColor;
-      }
-
-      .contact-icons a:hover {
-        color: #45a06c;
-        text-decoration: none;
-      }
-
-      @media (max-width: 700px) {
-        .intro h1 {
-          font-size: 34px;
-        }
-
-        .news-gallery.two-photos {
-          grid-template-columns: 1fr;
-        }
-
-        .circle {
-          width: 210px;
-          height: 210px;
-        }
-
-        .leaf-icon {
-          width: 92px;
-          height: 92px;
-        }
-
-        .tree-icon {
-          width: 86px;
-          height: 86px;
-        }
-
-        .tree-icon {
-          width: 92px;
-          height: 92px;
-          margin-bottom: 12px;
-          fill: #313437;
-        }
-
-        .publication-year {
-          font-size: 32px;
-        }
-
-        .publication-entry h3 {
-          font-size: 19px;
-        }
-
-        .publication-entry p,
-        .publication-links a {
-          font-size: 16px;
-        }
-      }
-    </style>
   </head>
 
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-menu-button>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
       </button>
@@ -268,7 +27,6 @@
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#courses">Courses</a>
-        <a href="#grants">Grants</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -278,8 +36,8 @@
         <div class="intro-inner">
           <h1>Thi Duyen Nguyen</h1>
           <p class="hero-role">
-            I am a PhD Candidate in Ecology at the <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a> (UCAS), based at <a href="http://english.xtbg.cas.cn/">Xishuangbanna Tropical Botanical Garden</a> (XTBG), <a href="https://english.cas.cn/">Chinese Academy of Sciences</a> (CAS). I study the drivers of tree architecture and forest structure at any scale. My current research examines how trees grow, compete, and adjust their architecture under different ecological conditions using large forest datasets and Bayesian statistical models.
-          </p>
+            I am a PhD Candidate in Ecology at the <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a> (UCAS), based at <a href="http://english.xtbg.cas.cn/">Xishuangbanna Tropical Botanical Garden</a> (XTBG), <a href="https://english.cas.cn/">Chinese Academy of Sciences</a> (CAS).
+            My current research examines how trees grow, compete, and adjust their architecture under different ecological conditions, using large forest datasets and Bayesian statistical models.          </p>
 
           <div class="social-links" aria-label="Profile links">
             <a href="https://github.com/nt-duyen" aria-label="GitHub profile">
@@ -326,9 +84,12 @@
             <ul>
               <li>Volunteered at <a href="https://www.atbc2026.org/">The 62nd Annual Meeting of the Association for Tropical Biology and Conservation (ATBC 2026)</a>.</li>
             </ul>
-            <div class="news-gallery atbc-photo">
-              <img class="photo-full" src="assets/atbc_volunteer_group.JPG" alt="ATBC 2026 volunteer activity" />
-            </div>
+            <img
+              src="assets/atbc_volunteer_group.JPG"
+              alt="ATBC 2026 volunteer activity"
+              loading="lazy"
+              style="display: block; width: 100%; max-width: 480px; height: auto; margin: 14px auto 30px; border-radius: 4px;"
+            />
           </article>
 
           <article class="news-block">
@@ -336,9 +97,12 @@
             <ul>
               <li>Participated in the <a href="https://forestgeo.si.edu/">ForestGEO Analytical Workshop</a>.</li>
             </ul>
-            <div class="news-gallery forestgeo-photo">
-              <img class="photo-full" src="assets/forestgeo.jpg" alt="ForestGEO Analytical Workshop" />
-            </div>
+            <img
+              src="assets/forestgeo.jpg"
+              alt="ForestGEO Analytical Workshop"
+              loading="lazy"
+              style="display: block; width: 100%; max-width: 420px; height: auto; margin: 14px auto 30px; border-radius: 4px;"
+            />
           </article>
 
           <article class="news-block">
@@ -346,9 +110,19 @@
             <ul>
               <li>Volunteered in the <a href="https://iucn.org/news/202504/call-application-marine-turtle-conservation-volunteer-programme-con-dao-national-park">International Union for Conservation of Nature Marine Turtle Conservation Programme</a>.</li>
             </ul>
-            <div class="news-gallery two-photos">
-              <img src="assets/iucn.jpg" alt="IUCN Marine Turtle Conservation Programme" />
-              <img class="photo-lower" src="assets/iucn1.jpg" alt="Marine turtle conservation volunteer activity" />
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px; margin: 14px auto 30px;">
+              <img
+                src="assets/iucn.jpg"
+                alt="IUCN Marine Turtle Conservation Programme"
+                loading="lazy"
+                style="display: block; width: 320px; height: 220px; object-fit: cover; border-radius: 4px;"
+              />
+              <img
+                src="assets/iucn1.jpg"
+                alt="Marine turtle conservation volunteer activity"
+                loading="lazy"
+                style="display: block; width: 320px; height: 220px; object-fit: cover; border-radius: 4px;"
+              />
             </div>
           </article>
 
@@ -357,9 +131,12 @@
             <ul>
               <li>Participated in <a href="https://mp.weixin.qq.com/s/4hihHhv6JFnZZ4QVlXUnKQ">The 8th Advanced Statistics Workshop at XTBG</a>.</li>
             </ul>
-            <div class="news-gallery one-photo">
-              <img class="photo-wide" src="assets/8th_stat_course.JPG" alt="The 8th Advanced Statistics Workshop at XTBG" />
-            </div>
+            <img
+              src="assets/8th_stat_course.JPG"
+              alt="The 8th Advanced Statistics Workshop at XTBG"
+              loading="lazy"
+              style="display: block; width: 100%; max-width: 420px; height: auto; margin: 14px auto 30px; border-radius: 4px;"
+            />
           </article>
 
           <article class="news-block">
@@ -392,23 +169,29 @@
           </div>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="card-number">01</span>
-            <h3>Tropical Forest Ecology</h3>
-            <p>Exploring how ecological processes shape forest structure, tree diversity, and community patterns across scales.</p>
-          </article>
-          <article class="feature-card">
-            <span class="card-number">02</span>
-            <h3>Tree Allometry</h3>
-            <p>Studying how trees grow, compete, and adjust their architecture under different ecological conditions.</p>
-          </article>
-          <article class="feature-card">
-            <span class="card-number">03</span>
-            <h3>Bayesian Modelling</h3>
-            <p>Using large forest datasets and Bayesian statistical models to connect data, uncertainty, and ecological theory.</p>
-          </article>
-        </div>
+        <article class="feature-card">
+          <h3>Tree Allometry</h3>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px; margin: 24px auto;">
+            <img
+              src="assets/forest_KC.jpg"
+              alt="Forest trees"
+              loading="lazy"
+              style="display: block; width: 100%; max-width: 320px; height: auto; border-radius: 4px;"
+            />
+            <img
+              src="assets/tree-allometry.png"
+              alt="Tree allometry diagram showing tree height, crown radius, and diameter at breast height"
+              loading="lazy"
+              style="display: block; width: 100%; max-width: 540px; height: auto; mix-blend-mode: multiply;"
+            />
+          </div>
+
+          <p>
+            I study how biotic and abiotic constraints shape tree architecture through the relationships among stem diameter, tree height, and crown size.
+            Using large forest datasets and Bayesian models, I investigate these relationships to better understand forest structure, with implications for estimating carbon storage and understanding forest responses to climate change.
+          </p>
+        </article>
       </section>
 
       <section class="section-band publications" id="publications">
