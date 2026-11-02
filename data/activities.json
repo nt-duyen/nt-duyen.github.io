@@ -1,0 +1,247 @@
+[
+  {
+    "date": "September 2026",
+    "datetime": "2026-09",
+    "items": [
+      {
+        "parts": [
+          { "text": "Participated as a delegate in the " },
+          {
+            "text": "Regional Training on Advancing Ecological Civilization for Green Transition Pathways in the Lancang-Mekong Region",
+            "href": "https://mekonginstitute.org/wp-content/uploads/2026/07/CDS-Ecological-Civilization-Training_16-6-26.pdf"
+          },
+          { "text": "." }
+        ],
+        "galleries": [
+          {
+            "galleryClass": "one-photo",
+            "images": [
+              {
+                "src": "assets/mekong_training_group.JPG",
+                "alt": "Mekong Training Group Photo" }
+            ]
+          }
+        ]
+      },
+      {
+        "parts": [
+          { "text": "Began PhD studies at UCAS, supported by " },
+          { "text": "the CAS-ANSO Scholarship", "href": "https://www.anso.org.cn/" },
+          { "text": "." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "one-photo",
+        "images": [
+          {
+            "src": "assets/ucas_group.JPG",
+            "alt": "Began PhD studies at UCAS",
+            "className": "photo-full"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 2026",
+    "datetime": "2026-07",
+    "items": [
+      {
+        "parts": [
+          { "text": "Volunteered at " },
+          {
+            "text": "The 62nd Annual Meeting of the Association for Tropical Biology and Conservation (ATBC 2026)",
+            "href": "https://www.atbc2026.org/"
+          },
+          { "text": ", China." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "one-photo",
+        "images": [
+          {
+            "src": "assets/atbc_volunteer_group.JPG",
+            "alt": "ATBC 2026 volunteer activity",
+            "className": "photo-full"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "June 2026",
+    "datetime": "2026-06",
+    "items": [
+      {
+        "parts": [
+          { "text": "Participated in the " },
+          {
+            "text": "ForestGEO Analytical Workshop",
+            "href": "https://forestgeo.si.edu/"
+          },
+          { "text": ", Thailand." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "two-photos",
+        "images": [
+          { "src": "assets/forestgeo.jpg", "alt": "ForestGEO Analytical Workshop" },
+          { "src": "assets/forestgeo_pre.JPG", "alt": "ForestGEO Analytical Workshop presentation" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "January 2026",
+    "datetime": "2026-01",
+    "items": [
+      {
+        "parts": [
+          { "text": "Poster presentation at the " },
+          {
+            "text": "10th XTBG Youth Science Festival: “In the Name of the Tree”",
+            "href": "https://mp.weixin.qq.com/s/TboSPUilJLdGwOeYKnV2YA"
+          },
+          { "text": ", China" }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "one-photo",
+        "images": [
+          {
+            "src": "assets/youth_science.jpg",
+            "alt": "Poster presentation at the 10th XTBG Youth Science Festival",
+            "className": "photo-full"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 2025",
+    "datetime": "2025-07",
+    "items": [
+      {
+        "parts": [
+          { "text": "Volunteered in the " },
+          {
+            "text": "International Union for Conservation of Nature Marine Turtle Conservation Programme",
+            "href": "https://iucn.org/news/202504/call-application-marine-turtle-conservation-volunteer-programme-con-dao-national-park"
+          },
+          { "text": ", Vietnam." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "two-photos",
+        "images": [
+          { "src": "assets/iucn.jpg", "alt": "IUCN Marine Turtle Conservation Programme" },
+          { "src": "assets/iucn1.jpg", "alt": "Marine turtle conservation volunteer activity" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "June 2025",
+    "datetime": "2025-06",
+    "items": [
+      {
+        "parts": [
+          { "text": "Participated in " },
+          {
+            "text": "The 8th Advanced Statistics Workshop at XTBG",
+            "href": "https://mp.weixin.qq.com/s/4hihHhv6JFnZZ4QVlXUnKQ"
+          },
+          { "text": ", China." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "one-photo",
+        "images": [
+          {
+            "src": "assets/8th_stat_course.JPG",
+            "alt": "The 8th Advanced Statistics Workshop at XTBG",
+            "className": "photo-full"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "April 2025",
+    "datetime": "2025-04",
+    "items": [
+      {
+        "parts": [
+          { "text": "New paper, a part of my Master's thesis revealing how wood density shapes global tree architecture, is now online in " },
+          { "text": "Journal of Forestry Research", "href": "https://link.springer.com/article/10.1007/s11676-025-01898-9" },
+          { "text": "." }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "March 2025",
+    "datetime": "2025-03",
+    "items": [
+      {
+        "parts": [
+          { "text": "Oral presentation at " },
+          {
+            "text": "The 72nd Annual Meeting of the Ecological Society of Japan",
+            "href": "https://esj.ne.jp/meeting/72/home/index.html"
+          },
+          { "text": ", Japan." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "one-photo",
+        "images": [
+          {
+            "src": "assets/esj_japan.jpg",
+            "alt": "Presentation at the 72nd Annual Meeting of the Ecological Society of Japan",
+            "className": "photo-full"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "October 2023",
+    "datetime": "2023-10",
+    "items": [
+      {
+        "parts": [
+          { "text": "Volunteered at " },
+          {
+            "text": "The 8th International Canopy Conference",
+            "href": "https://canopy8th.casconf.cn/"
+          },
+          { "text": ", China." }
+        ]
+      }
+    ],
+    "galleries": [
+      {
+        "galleryClass": "two-photos",
+        "images": [
+          { "src": "assets/canopy_conf.jpg", "alt": "The 8th International Canopy Conference" },
+          { "src": "assets/canopy_conf1.jpg", "alt": "The 8th International Canopy Conference" }
+        ]
+      }
+    ]
+  }
+]
