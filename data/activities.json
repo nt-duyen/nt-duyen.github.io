@@ -1,5 +1,21 @@
 [
   {
+    "date": "November 2026",
+    "datetime": "2026-11",
+    "items": [
+      {
+        "parts": [
+          { "text": "Participated in the " },
+          {
+            "text": "Scientific Writing Workshop for Early-Career Tropical Biologists",
+            "href": "https://tropicalbiology.org/blog/2026/10/10/scientific-writing-workshop-for-early-career-tropical-biologists/"
+          },
+          { "text": ", organized by the Association for Tropical Biology and Conservation (ATBC)." }
+        ]
+      }
+    ]
+  },
+  {
     "date": "September 2026",
     "datetime": "2026-09",
     "items": [
