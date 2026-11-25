@@ -949,8 +949,8 @@ main {
   width: auto;
 }
 
-/* Side by side needs about 913px (320 + 24 + 569); stack below that. */
-@media (max-width: 960px) {
+/* Side by side needs about 955px (320 + 24 + 611); stack below that. */
+@media (max-width: 1010px) {
   .allometry-figures {
     align-items: center;
     flex-direction: column;
@@ -960,10 +960,10 @@ main {
     flex: none;
   }
 
-  /* Never larger than its side-by-side size (426.67 * 4 / 3 ≈ 569px); shrinks to fit. */
+  /* Never larger than its side-by-side size (426.67 * 1055 / 737 ≈ 611px); shrinks to fit. */
   .allometry-diagram {
     height: auto;
-    max-width: calc(320px * 16 / 9);
+    max-width: 611px;
     width: 100%;
   }
 }
