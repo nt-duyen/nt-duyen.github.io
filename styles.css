@@ -17,13 +17,13 @@
 
 html {
   scroll-behavior: smooth;
-}fintro
+}
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Raleway, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.68;
@@ -873,4 +873,46 @@ main {
 
 #research {
   background: #faf7ed;
+}
+
+/* Photo links open the full-quality original; keep the gallery grid unchanged. */
+.news-gallery a {
+  display: block;
+}
+
+.news-more {
+  background: transparent;
+  border: 1px solid #cfd8d2;
+  border-radius: 18px;
+  color: var(--green);
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 6px 16px;
+}
+
+.news-more:hover {
+  border-color: var(--green);
+  color: var(--green-dark);
+}
+
+/* Nine nav links: keep one line just above the mobile breakpoint. */
+@media (min-width: 781px) and (max-width: 900px) {
+  .site-nav {
+    flex-wrap: nowrap;
+  }
+
+  .site-nav a {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Let the open mobile menu scroll on short screens (e.g. phones in landscape). */
+@media (max-width: 780px) {
+  .site-nav {
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
 }

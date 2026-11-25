@@ -33,7 +33,7 @@
             "galleryClass": "one-photo",
             "images": [
               {
-                "src": "assets/mekong_training_group.JPG",
+                "src": "assets/web/mekong_training_group.JPG", "original": "assets/mekong_training_group.JPG",
                 "alt": "Mekong Training Group Photo" }
             ]
           }
@@ -52,7 +52,7 @@
         "galleryClass": "one-photo",
         "images": [
           {
-            "src": "assets/ucas_group.JPG",
+            "src": "assets/web/ucas_group.JPG", "original": "assets/ucas_group.JPG",
             "alt": "Began PhD studies at UCAS",
             "className": "photo-full"
           }
@@ -80,7 +80,7 @@
         "galleryClass": "one-photo",
         "images": [
           {
-            "src": "assets/atbc_volunteer_group.JPG",
+            "src": "assets/web/atbc_volunteer_group.JPG", "original": "assets/atbc_volunteer_group.JPG",
             "alt": "ATBC 2026 volunteer activity",
             "className": "photo-full"
           }
@@ -107,8 +107,8 @@
       {
         "galleryClass": "two-photos",
         "images": [
-          { "src": "assets/forestgeo.jpg", "alt": "ForestGEO Analytical Workshop" },
-          { "src": "assets/forestgeo_pre.JPG", "alt": "ForestGEO Analytical Workshop presentation" }
+          { "src": "assets/web/forestgeo.jpg", "original": "assets/forestgeo.jpg", "alt": "ForestGEO Analytical Workshop" },
+          { "src": "assets/web/forestgeo_pre.JPG", "original": "assets/forestgeo_pre.JPG", "alt": "ForestGEO Analytical Workshop presentation" }
         ]
       }
     ]
@@ -133,7 +133,7 @@
         "galleryClass": "one-photo",
         "images": [
           {
-            "src": "assets/youth_science.jpg",
+            "src": "assets/web/youth_science.jpg", "original": "assets/youth_science.jpg",
             "alt": "Poster presentation at the 10th XTBG Youth Science Festival",
             "className": "photo-full"
           }
@@ -160,8 +160,8 @@
       {
         "galleryClass": "two-photos",
         "images": [
-          { "src": "assets/iucn.jpg", "alt": "IUCN Marine Turtle Conservation Programme" },
-          { "src": "assets/iucn1.jpg", "alt": "Marine turtle conservation volunteer activity" }
+          { "src": "assets/web/iucn.jpg", "original": "assets/iucn.jpg", "alt": "IUCN Marine Turtle Conservation Programme" },
+          { "src": "assets/web/iucn1.jpg", "original": "assets/iucn1.jpg", "alt": "Marine turtle conservation volunteer activity" }
         ]
       }
     ]
@@ -186,7 +186,7 @@
         "galleryClass": "one-photo",
         "images": [
           {
-            "src": "assets/8th_stat_course.JPG",
+            "src": "assets/web/8th_stat_course.JPG", "original": "assets/8th_stat_course.JPG",
             "alt": "The 8th Advanced Statistics Workshop at XTBG",
             "className": "photo-full"
           }
@@ -227,7 +227,7 @@
         "galleryClass": "one-photo",
         "images": [
           {
-            "src": "assets/esj_japan.jpg",
+            "src": "assets/web/esj_japan.jpg", "original": "assets/esj_japan.jpg",
             "alt": "Presentation at the 72nd Annual Meeting of the Ecological Society of Japan",
             "className": "photo-full"
           }
@@ -254,8 +254,8 @@
       {
         "galleryClass": "two-photos",
         "images": [
-          { "src": "assets/canopy_conf.jpg", "alt": "The 8th International Canopy Conference" },
-          { "src": "assets/canopy_conf1.jpg", "alt": "The 8th International Canopy Conference" }
+          { "src": "assets/web/canopy_conf.jpg", "original": "assets/canopy_conf.jpg", "alt": "The 8th International Canopy Conference" },
+          { "src": "assets/web/canopy_conf1.jpg", "original": "assets/canopy_conf1.jpg", "alt": "The 8th International Canopy Conference" }
         ]
       }
     ]

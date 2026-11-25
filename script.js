@@ -9,22 +9,40 @@ function createGallery(galleryData) {
   const gallery = document.createElement("div");
   gallery.className = `news-gallery ${galleryData.galleryClass || "one-photo"}`;
   galleryData.images.forEach((image) => {
+    // Show the web-sized copy; clicking opens the full-quality original.
+    const link = document.createElement("a");
+    link.href = image.original || image.src;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     const element = document.createElement("img");
     element.src = image.src;
     element.alt = image.alt;
     element.loading = "lazy";
     if (image.className) element.className = image.className;
-    gallery.append(element);
+    link.append(element);
+    gallery.append(link);
   });
   return gallery;
 }
 
+const NEWS_MONTHS_SHOWN = 5;
+
 function renderActivities(activities) {
   activitiesTarget.replaceChildren();
 
-  activities.forEach((activity) => {
+  // Newest first; the first NEWS_MONTHS_SHOWN distinct months stay visible.
+  const sorted = [...activities].sort((a, b) => b.datetime.localeCompare(a.datetime));
+  const months = [...new Set(sorted.map((activity) => activity.datetime))];
+  const recentMonths = new Set(months.slice(0, NEWS_MONTHS_SHOWN));
+  const hiddenBlocks = [];
+
+  sorted.forEach((activity) => {
     const article = document.createElement("article");
     article.className = "news-block";
+    if (!recentMonths.has(activity.datetime)) {
+      article.hidden = true;
+      hiddenBlocks.push(article);
+    }
 
     const date = document.createElement("time");
     date.dateTime = activity.datetime;
@@ -61,6 +79,23 @@ function renderActivities(activities) {
 
     activitiesTarget.append(article);
   });
+
+  if (hiddenBlocks.length) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "news-more";
+    button.textContent = "Show more";
+    button.addEventListener("click", () => {
+      hiddenBlocks.forEach((block) => {
+        block.hidden = false;
+      });
+      button.remove();
+      // Move focus to the first revealed month so keyboard users land on new content.
+      hiddenBlocks[0].tabIndex = -1;
+      hiddenBlocks[0].focus();
+    });
+    activitiesTarget.append(button);
+  }
 }
 
 if (activitiesTarget) {
