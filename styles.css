@@ -916,3 +916,12 @@ main {
     overflow-y: auto;
   }
 }
+
+/* Professional development "Show more": hidden rows stay hidden on mobile, where rows are display: block. */
+.conference-table tr[hidden] {
+  display: none;
+}
+
+.table-wrap + .news-more {
+  margin-top: 24px;
+}

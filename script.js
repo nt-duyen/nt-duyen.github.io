@@ -115,6 +115,51 @@ if (activitiesTarget) {
     });
 }
 
+// Professional development: show the first few entries, reveal the rest on demand.
+const PD_ROWS_SHOWN = 5;
+const pdTable = document.querySelector("#activities .conference-table");
+
+if (pdTable) {
+  const hiddenRows = [];
+  let entriesSeen = 0;
+  let yearHeader = null;
+
+  pdTable.querySelectorAll("tbody tr").forEach((row) => {
+    if (row.querySelector("th")) {
+      // Year heading: hidden until one of its entries is shown.
+      yearHeader = row;
+      row.hidden = true;
+      hiddenRows.push(row);
+      return;
+    }
+    entriesSeen += 1;
+    if (entriesSeen <= PD_ROWS_SHOWN) {
+      if (yearHeader) yearHeader.hidden = false;
+    } else {
+      row.hidden = true;
+      hiddenRows.push(row);
+    }
+  });
+
+  const rowsToReveal = hiddenRows.filter((row) => row.hidden);
+  if (rowsToReveal.length) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "news-more";
+    button.textContent = "Show more";
+    button.addEventListener("click", () => {
+      rowsToReveal.forEach((row) => {
+        row.hidden = false;
+      });
+      button.remove();
+      // Move focus to the first revealed row so keyboard users land on new content.
+      rowsToReveal[0].tabIndex = -1;
+      rowsToReveal[0].focus();
+    });
+    pdTable.closest(".table-wrap").after(button);
+  }
+}
+
 const menuButton = document.querySelector("[data-menu-button]");
 const nav = document.querySelector("[data-nav]");
 
