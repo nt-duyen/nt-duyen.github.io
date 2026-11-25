@@ -917,53 +917,42 @@ main {
   }
 }
 
-/* Tree Allometry: photo at its own size, diagram matched to the photo's height. */
+/* Tree Allometry: photo and diagram side by side in matching boxes. */
 .allometry-figures {
-  align-items: flex-start;
-  display: flex;
+  display: grid;
   gap: 24px;
-  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 24px auto;
+  max-width: 900px;
 }
 
 .allometry-figures a {
   display: block;
-  flex: 0 1 320px;
-  max-width: 320px;
-  width: 100%;
 }
 
-.allometry-photo {
+.allometry-photo,
+.allometry-diagram {
+  aspect-ratio: 3 / 4;
   border-radius: 4px;
   display: block;
   height: auto;
   width: 100%;
 }
 
-/* The photo is 3:4, so at 320px wide it is 320 * 4 / 3 = 426.67px tall. */
-.allometry-diagram {
-  display: block;
-  flex: none;
-  height: calc(320px * 4 / 3);
-  mix-blend-mode: multiply;
-  width: auto;
+.allometry-photo {
+  object-fit: cover;
 }
 
-/* Side by side needs about 955px (320 + 24 + 611); stack below that. */
-@media (max-width: 1010px) {
+.allometry-diagram {
+  mix-blend-mode: multiply;
+  object-fit: contain;
+  /* Bottom-aligned, then nudged down past the SVG's blank margin below the ground
+     line (y=820 of 900) so the ground meets the bottom edge of the photo. */
+  object-position: center 111.43%;
+}
+
+@media (max-width: 700px) {
   .allometry-figures {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .allometry-figures a {
-    flex: none;
-  }
-
-  /* Never larger than its side-by-side size (426.67 * 1055 / 737 ≈ 611px); shrinks to fit. */
-  .allometry-diagram {
-    height: auto;
-    max-width: 611px;
-    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
